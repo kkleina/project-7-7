@@ -1,0 +1,491 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway:300,400,600,700|Open+Sans:400,700|Cardo:400i&subset=latin-ext');
+
+$primaryFont: 'Raleway', sans-serif;
+$secondFont: 'Open Sans', sans-serif;
+
+$primaryColor: #e84545;
+$primaryColorDarker: #d11d1d;
+$secondColor: rgba(58, 62, 100, .95);
+$secondColorDarker: rgba(49, 52, 84, .95);
+$helperColor1: #2b2e4a;
+$helperColor2: #53354a;
+$iconColor: #c6cacc;
+$greyLight: #6c7279;
+$greyDark: #2d3033;
+
+
+@mixin center {
+    display: -webkit-flex;
+    display: flex;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-flex-direction: column;
+    flex-direction: column;
+}
+
+
+body {
+    font-family: $primaryFont;
+}
+
+section {
+    margin: 100px 0;
+}
+
+h1, h3 {
+    text-transform: uppercase;
+    font-size: 30px;
+    font-weight: 700;
+}
+
+h1 {
+    font-family: $secondFont;
+}
+
+h2 {
+    font-size: 22px;
+    
+    small {
+        color: $primaryColor;
+        display: block;
+        font-size: 13px;
+        margin: 10px 0;
+        text-transform: uppercase;
+    }
+}
+
+h3 {
+    font-size: 14px;
+}
+
+section h2, h3 {
+    color: $greyDark;
+}
+
+section p {
+    color: $greyLight;
+}
+
+.btn-primary {
+    background: $primaryColor;
+    border: none;
+    border-radius: 2px;
+    line-height: 13px;
+    font-size: 13px;
+    font-weight: 600;
+    padding: 15px 40px;
+    text-transform: uppercase;
+}
+
+.btn-primary:hover {
+    background: $primaryColorDarker;
+}
+
+.social-btn {
+    background: none;
+    padding: 0;
+    font-size: 18px;
+    height: 40px;
+    line-height: 40px;
+    width: 40px;
+    transition: .3s;
+}
+
+.lead {
+    color: $greyDark;
+    font-size: 24px;
+    font-weight: 300;
+}
+
+@media (min-width: 768px) {
+    .lead {
+        font-size: 28px;
+    }
+}
+
+.signature {
+    color: $greyDark;
+    font-family: $primaryFont;
+    font-size: 13px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+/* HEADER */
+
+header {
+    background: url(images/header.jpg) center no-repeat;
+    .navbar-inverse {
+        background: $secondColorDarker;
+        border: none;
+        border-radius: 0;
+        margin-bottom: 0;
+
+        .container {
+            border-bottom: 1px solid $greyLight;
+            
+            ul li a {
+                color: #fff;
+                font-size: 13px;
+                font-weight: 700;
+                text-transform: uppercase;
+            }
+            
+            ul li a:hover,
+            ul li a:focus,
+            ul li.active a {
+                background: none;
+                color: $primaryColor;
+            }
+            
+            .navbar-toggle {
+                border: none;
+                
+                &:focus,
+                &:hover {
+                    background: $primaryColor;
+                }
+            }
+        }
+    }
+    
+    .jumbotron {
+        background: $secondColorDarker;
+        color: #fff;
+        min-height: 100vh;
+        @include center;
+    }
+}
+
+@media (min-width: 768px) {
+    header {
+        .navbar {
+            .container {
+                .navbar-brand {
+                    padding: 30px 0;
+
+                    img {
+                        height: 20px;
+                        width: auto;
+                    }
+                }
+
+                ul li a {
+                    line-height: 50px;
+                }
+            }
+        }
+
+        .jumbotron {
+            min-height: 750px;
+            padding-top: 100px;
+            
+            h1 {
+                font-size: 45px;
+            }
+            
+            p {
+                font-size: 22px;
+                padding: 20px 100px;
+            }
+        }
+    }
+}
+
+@media (min-width: 992px) {
+    header {
+        .navbar {
+            .container {
+                .navbar-brand {
+                    padding: 40px 0;
+
+                    img {
+                        height: 20px;
+                        width: auto;
+                    }
+                }
+                
+                ul li a {
+                    margin: 25px 0 25px 50px;
+                    padding: 0;
+                }
+            }
+        }
+    }
+}
+
+/* FEATURES SECTION */
+
+#features {
+    
+    p {
+        margin: 20px 30px 50px;
+    }
+}
+
+/* WORKS SECTION */
+
+#works {
+    
+    h3, p {
+        color: #fff;
+    }
+    
+    [class*="col-"] {
+        padding: 0;
+    }
+    
+    [class*="project-"] {
+        margin: 1px;
+        position: relative;
+        
+        .desc {
+            background: rgba(232, 69, 69, .9);
+            display: block;
+            padding: 1px 20px;
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+        }
+    }
+    
+    .project-1 {
+        background: url(https://images.pexels.com/photos/296878/pexels-photo-296878.jpeg?h=350&dpr=2&auto=compress&cs=tinysrgb) center/cover;
+        height: 350px;
+    }
+    
+    .project-2 {
+        background: url(https://images.pexels.com/photos/71983/black-and-white-interior-macbook-drawing-71983.jpeg?h=350&auto=compress&cs=tinysrgb) center/cover;
+        height: 350px;
+    }
+    
+    .project-3 {
+        background: url(https://images.pexels.com/photos/257897/pexels-photo-257897.jpeg?h=350&auto=compress&cs=tinysrgb) center/cover;
+        height: 350px;
+    }
+    
+    .project-4 {
+        background: url(https://images.pexels.com/photos/381949/pexels-photo-381949.jpeg?h=350&auto=compress&cs=tinysrgb) center/cover;
+        height: 350px;
+    }
+    
+    .project-5 {
+        background: url(https://images.pexels.com/photos/266176/pexels-photo-266176.jpeg?h=350&auto=compress&cs=tinysrgb) center/cover;
+        height: 350px;
+    }
+    
+    .project-6 {
+        background: url(https://images.pexels.com/photos/39284/macbook-apple-imac-computer-39284.jpeg?h=350&auto=compress&cs=tinysrgb) center/cover;
+        height: 350px;
+    }
+    
+    .project-7 {
+        background: url(https://images.pexels.com/photos/95916/pexels-photo-95916.jpeg?h=350&auto=compress&cs=tinysrgb) center/cover;
+        height: 350px;
+    }
+    
+    .project-8 {
+        background: url(https://images.pexels.com/photos/273691/pexels-photo-273691.jpeg?h=350&auto=compress&cs=tinysrgb) center/cover;
+        height: 350px;
+    }
+    
+}
+
+@media (min-width: 768px) {
+    #works {
+        [class*="project-"] {
+            .desc {
+                display: none;
+            }
+
+            &:hover > .desc {
+                display: block;
+                height: 350px;
+                padding: 20px;
+                @include center;
+            }
+        }
+    }
+}
+
+/* TEAM SECTION */
+
+#team {
+    
+    .thumbnail {
+        border: none;
+        padding: 0;
+        
+        .caption {
+            padding: 0;
+            
+            p {
+                margin: 25px 0;
+            }
+                
+            .social > .btn {
+                @extend .social-btn;
+                border: 1px solid $iconColor;
+                border-radius: 0;
+                color: $iconColor;
+
+                &:hover {
+                    background: $iconColor;
+                    color: #fff;
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: 768px) {
+    #team {
+        text-align: left;
+    }
+}
+
+/* CLIENTS SECTION */
+
+#clients {
+    background: #53354a;
+    
+    .container {
+        position: relative;
+
+        .col-md-offset-6 {
+            position: absolute;
+        }
+    }
+    
+    .image {
+        background: url(images/quotes.jpg) right/cover no-repeat;
+        min-height: 300px;
+    }
+    
+    .carousel {
+        
+        .carousel-indicators {
+            
+            li {
+                background: rgba(255, 255, 255, .2);
+                border: none;
+                height: 12px;
+                margin: 0 3px;
+                width: 12px;
+                
+                &.active {
+                    background: rgba(255, 255, 255, 1);
+                    
+                }
+            }
+        }
+        
+        .carousel-caption {
+            min-height: 500px;
+            position: static;
+            text-align: left;
+            @include center;
+            
+            blockquote {
+                border: none;
+                font-family: 'Cardo', serif;
+                font-size: 24px;
+
+                footer, p {
+                    margin-top: 25px;
+                    color: #fff;
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: 768px) {
+    #clients {
+        .image {
+            min-height: 500px;
+        }
+        .carousel {
+            .carousel-indicators {
+                bottom: 90px;
+            }
+        
+            .carousel-caption {
+                line-height: 1.1;
+                min-height: 500px;
+                padding: 0 0 100px 30px;
+            
+                blockquote {
+                    font-size: 36px;
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: 992px) {
+    #clients {
+        .carousel {
+            max-width: 600px;
+        }
+    }
+}
+
+/* DOWNLOAD SECTION */
+
+#download .btn {
+    margin-top: 30px;
+    padding-left: 80px;
+    padding-right: 80px;
+}
+
+/* FOOTER */
+
+.footer {
+    background: $secondColor;
+    
+    h3, p, address {
+        color: #fff;
+    }
+    
+    .row:nth-of-type(1) {
+        margin: 70px 0;
+        
+        address, 
+        p:not([class*="social"]) {
+            opacity: .5;
+        }
+        
+        .social > .btn {
+            @extend .social-btn;
+            border: 2px solid #fff;
+            border-radius: 2px;
+            color: #fff;
+            line-height: 36px;
+            
+            &:hover {
+                background: #fff;
+                color: $secondColor;
+            }
+        }
+    }
+    
+    .row:nth-of-type(2) {
+        background: $secondColorDarker;
+        color: #808080;
+        padding: 30px 0;
+        
+        p {
+            margin: 0;
+        }
+        
+        a {
+            color: #fff;
+        }
+    }
+    
+    .fa-heart {
+        color: red;
+    }
+}

@@ -3,13 +3,313 @@
 	<head>
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<title>bootstrap + sass</title>
+		<title>Project 7.7</title>
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+		<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
 		<link rel="stylesheet" type="text/css" href="style.css">
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
 		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
 	</head>
 	<body>
+	    <header>
+	        <nav class="navbar navbar-inverse">
+                <div class="container">
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#main-nav" aria-expanded="false">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                        <a class="navbar-brand" href="#">
+                            <img alt="ActiveBox" src="images/activebox-logo.png">
+                        </a>
+                    </div>
+                    <div class="collapse navbar-collapse" id="main-nav">
+                        <ul class="nav navbar-nav navbar-right text-center">
+                            <li><a href="#features">Features</a></li>
+                            <li><a href="#works">Works</a></li>
+                            <li><a href="#team">Our Team</a></li>
+                            <li><a href="#clients">Testimonials</a></li>
+                            <li><a href="#download">Download</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+            <div class="jumbotron text-center">
+                <div class="container">
+                    <h1>
+                        Your Favorite One Page<br>
+                        Multi Purpose Template
+                    </h1>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent commodo cursus magna vel scelerisque nisl consectetur et.</p>
+                    <p><a class="btn btn-primary" href="#" role="button">Find Out More</a></p>
+                </div>
+            </div>
+	    </header>
 	    
+	    <section id="features" class="container text-center">
+	        <div class="row">
+	            <div class="col-xs-12 col-sm-6 col-md-4">
+                    <img src="icons/pencils.png" alt="Easily Customised">
+                    <h3>Easily Customised</h3>
+	                <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Nullam quis risus eget urna mollis ornare vel eu leo. Donec ullamcorper nulla non metus auctor fringilla.</p>
+	            </div>
+	            <div class="col-xs-12 col-sm-6 col-md-4">
+                    <img src="icons/monitor.png" alt="Responsive REady">
+                    <h3>Responsive Ready</h3>
+	                <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Nullam quis risus eget urna mollis ornare vel eu leo. Donec ullamcorper nulla non metus auctor fringilla.</p>
+	            </div>
+	            <div class="col-xs-12 col-sm-6 col-md-4">
+                    <img src="icons/bulb.png" alt="Modern Design">
+                    <h3>Modern Design</h3>
+	                <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Nullam quis risus eget urna mollis ornare vel eu leo. Donec ullamcorper nulla non metus auctor fringilla.</p>
+	            </div>
+	            <div class="col-xs-12 col-sm-6 col-md-4">
+                    <img src="icons/atom.png" alt="Clean Code">
+                    <h3>Clean Code</h3>
+	                <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Nullam quis risus eget urna mollis ornare vel eu leo. Donec ullamcorper nulla non metus auctor fringilla.</p>
+	            </div>
+	            <div class="col-xs-12 col-sm-6 col-md-4">
+                    <img src="icons/briefcase.png" alt="Ready to Ship">
+                    <h3>Ready to Ship</h3>
+	                <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Nullam quis risus eget urna mollis ornare vel eu leo. Donec ullamcorper nulla non metus auctor fringilla.</p>
+	            </div>
+	            <div class="col-xs-12 col-sm-6 col-md-4">
+                    <img src="icons/cloud.png" alt="Download for Free">
+                    <h3>Download for Free</h3>
+	                <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Nullam quis risus eget urna mollis ornare vel eu leo. Donec ullamcorper nulla non metus auctor fringilla.</p>
+	            </div>
+	        </div>
+	    </section>
+	    
+	    <section id="works" class="container-fluid text-center">
+	        <div class="row">
+	            <div class="col-xs-12 col-sm-6 col-lg-3">
+                    <div class="project-1">
+                        <div class="desc">
+                            <h3>Project Name</h3>
+                            <p>User Interface Design</p>
+                        </div>
+	                </div>
+                </div>
+	            <div class="col-xs-12 col-sm-6 col-lg-3">
+                    <div class="project-2">
+                        <div class="desc">
+                            <h3>Project Name</h3>
+                            <p>User Interface Design</p>
+                        </div>
+	                </div>
+                </div>
+	            <div class="col-xs-12 col-sm-6 col-lg-3">
+                    <div class="project-3">
+                        <div class="desc">
+                            <h3>Project Name</h3>
+                            <p>User Interface Design</p>
+                        </div>
+	                </div>
+                </div>
+	            <div class="col-xs-12 col-sm-6 col-lg-3">
+                    <div class="project-4">
+                        <div class="desc">
+                            <h3>Project Name</h3>
+                            <p>User Interface Design</p>
+                        </div>
+	                </div>
+                </div>
+	            <div class="col-xs-12 col-sm-6 col-lg-3">
+                    <div class="project-5">
+                        <div class="desc">
+                            <h3>Project Name</h3>
+                            <p>User Interface Design</p>
+                        </div>
+	                </div>
+                </div>
+	            <div class="col-xs-12 col-sm-6 col-lg-3">
+                    <div class="project-6">
+                        <div class="desc">
+                            <h3>Project Name</h3>
+                            <p>User Interface Design</p>
+                        </div>
+	                </div>
+                </div>
+	            <div class="col-xs-12 col-sm-6 col-lg-3">
+                    <div class="project-7">
+                        <div class="desc">
+                            <h3>Project Name</h3>
+                            <p>User Interface Design</p>
+                        </div>
+	                </div>
+                </div>
+	            <div class="col-xs-12 col-sm-6 col-lg-3">
+                    <div class="project-8">
+                        <div class="desc">
+                            <h3>Project Name</h3>
+                            <p>User Interface Design</p>
+                        </div>
+	                </div>
+                </div>
+	        </div>
+	    </section>
+	    
+	    <section id="team" class="container text-center">
+	        <div class="row">
+	            <div class="col-xs-12 col-sm-6 col-md-3">
+	                <div class="thumbnail">
+	                    <img src="images/ruth-woods.jpg" alt="Ruth Woods">
+	                    <div class="caption">
+	                        <h2>Ruth Woods <small>Founder, CEO</small></h2>
+	                        <p>Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Maecenas sed diam eget risus varius blandit sit amet non magna. Nullam quis risus eget urna mollis ornare vel eu leo.</p>
+	                        <p class="social">
+	                            <a href="#" class="btn btn-default" role="button"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+	                            <a href="#" class="btn btn-default" role="button"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+	                            <a href="#" class="btn btn-default" role="button"><i class="fa fa-linkedin-square" aria-hidden="true"></i></a>
+                            </p>
+	                    </div>
+                    </div>
+                </div>
+	            <div class="col-xs-12 col-sm-6 col-md-3">
+	                <div class="thumbnail">
+	                    <img src="images/tim-reed.jpg" alt="Timothy Reed">
+	                    <div class="caption">
+	                        <h2>Timothy Reed <small>Co-Founder, Developer</small></h2>
+	                        <p>Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Maecenas sed diam eget risus varius blandit sit amet non magna. Nullam quis risus eget urna mollis ornare vel eu leo.</p>
+	                        <p class="social">
+	                            <a href="#" class="btn btn-default" role="button"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+	                            <a href="#" class="btn btn-default" role="button"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+	                            <a href="#" class="btn btn-default" role="button"><i class="fa fa-linkedin-square" aria-hidden="true"></i></a>
+                            </p>
+	                    </div>
+                    </div>
+                </div>
+	            <div class="col-xs-12 col-sm-6 col-md-3">
+	                <div class="thumbnail">
+	                    <img src="images/victoria-valdex.jpg" alt="Victoria Valdez">
+	                    <div class="caption">
+	                        <h2>Victoria Valdez <small>UI Designer</small></h2>
+	                        <p>Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Maecenas sed diam eget risus varius blandit sit amet non magna. Nullam quis risus eget urna mollis ornare vel eu leo.</p>
+	                        <p class="social">
+	                            <a href="#" class="btn btn-default" role="button"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+	                            <a href="#" class="btn btn-default" role="button"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+	                            <a href="#" class="btn btn-default" role="button"><i class="fa fa-linkedin-square" aria-hidden="true"></i></a>
+                            </p>
+	                    </div>
+                    </div>
+                </div>
+	            <div class="col-xs-12 col-sm-6 col-md-3">
+	                <div class="thumbnail">
+	                    <img src="images/bev-little.jpg" alt="Beverly Little">
+	                    <div class="caption">
+	                        <h2>Beverly Little <small>Data Scientist</small></h2>
+	                        <p>Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Maecenas sed diam eget risus varius blandit sit amet non magna. Nullam quis risus eget urna mollis ornare vel eu leo.</p>
+	                        <p class="social">
+	                            <a href="#" class="btn btn-default" role="button"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+	                            <a href="#" class="btn btn-default" role="button"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+	                            <a href="#" class="btn btn-default" role="button"><i class="fa fa-linkedin-square" aria-hidden="true"></i></a>
+                            </p>
+	                    </div>
+                    </div>
+                </div>
+            </div>
+	    </section>
+	    
+	    <section id="clients" class="container-fluid">
+            <div class="row">
+                <div class="col-xs-12 col-md-6 image"></div>
+                <div class="col-xs-12 col-md-6">
+                    <div id="carousel-clients" class="carousel slide" data-ride="carousel">
+                        <ol class="carousel-indicators">
+                            <li data-target="#carousel-clients" data-slide-to="0" class="active"></li>
+                            <li data-target="#carousel-clients" data-slide-to="1"></li>
+                            <li data-target="#carousel-clients" data-slide-to="2"></li>
+                            <li data-target="#carousel-clients" data-slide-to="3"></li>
+                            <li data-target="#carousel-clients" data-slide-to="4"></li>
+                        </ol>
+                        <div class="carousel-inner" role="listbox">
+                            <div class="item active">
+                                <div class="carousel-caption">
+                                    <blockquote>
+                                        <p>“Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Donec sed odio dui. Aenean eu leo quam...”</p>
+                                        <footer class="signature">Susan Sims, Interaction Designer at XYZ</footer>
+                                    </blockquote>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="carousel-caption">
+                                    <blockquote>
+                                        <p>“Maecenas sed diam eget risus varius blandit sit amet non magna. Nullam quis risus eget urna mollis ornare vel eu leo...”</p>
+                                        <footer class="signature">Susan Sims, Interaction Designer at XYZ</footer>
+                                    </blockquote>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="carousel-caption">
+                                    <blockquote>
+                                        <p>“Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus...”</p>
+                                        <footer class="signature">Susan Sims, Interaction Designer at XYZ</footer>
+                                    </blockquote>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="carousel-caption">
+                                    <blockquote>
+                                        <p>“Cras justo odio, dapibus ac facilisis in, egestas eget quam...”</p>
+                                        <footer class="signature">Susan Sims, Interaction Designer at XYZ</footer>
+                                    </blockquote>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="carousel-caption">
+                                    <blockquote>
+                                        <p>“Nullam quis risus eget urna mollis ornare vel eu leo. Donec ullamcorper nulla non metus auctor fringilla...”</p>
+                                        <footer class="signature">Susan Sims, Interaction Designer at XYZ</footer>
+                                    </blockquote>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+	    </section>
+	    
+	    <section id="download" class="container text-center">
+	        <p class="lead">Are You Ready to Start? Download Now For Free!</p>
+	        <p class="signature">Fusce dapibus, tellus ac cursus commodo</p>
+	        <p><a class="btn btn-primary" href="#" role="button">Download Here</a></p>
+	    </section>
+	    
+	    <footer class="container-fluid footer text-center">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xs-12 col-md-4">
+                        <h3>Location</h3>
+                        <address>
+                            3481 Melrose Place<br>
+                            Beverly Hills, CA 90210
+                        </address>
+                    </div>
+                    <div class="col-xs-12 col-md-4">
+                        <h3>Share with Love</h3>
+                        <p class="social">
+                            <a href="#" class="btn btn-default" role="button"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                            <a href="#" class="btn btn-default" role="button"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                            <a href="#" class="btn btn-default" role="button"><i class="fa fa-linkedin-square" aria-hidden="true"></i></a>
+                        </p>
+                    </div>
+                    <div class="col-xs-12 col-md-4">
+                        <h3>About ActiveBox</h3>
+                        <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec ullamcorper nulla non metus auctor fringilla.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-xs-12">
+                    <p>
+                        Copyright © 2015 ActiveBox. All Rights Reserved<br>
+                        Made with <i class="fa fa-heart" aria-hidden="true"></i> by <a href="#">Kamal Chaneman</a>
+                    </p>
+                </div>
+            </div>
+	    </footer>
     </body>
 </html>
