@@ -3,5 +3,4 @@ node_modules
 project-05-FE-dodatkowe-zadanie-m6.psd
 *.db
 **/*.db
-style.css.map
 .sass-cache
