@@ -61,7 +61,6 @@ section p {
 @media (min-width: 768px) {
   .lead {
     font-size: 28px; } }
-
 .signature {
   color: #2d3033;
   font-family: "Raleway", sans-serif;
@@ -120,7 +119,6 @@ header {
     header .jumbotron p {
       font-size: 22px;
       padding: 20px 100px; } }
-
 @media (min-width: 992px) {
   header .navbar .container .navbar-brand {
     padding: 40px 0; }
@@ -130,7 +128,6 @@ header {
   header .navbar .container ul li a {
     margin: 25px 0 25px 50px;
     padding: 0; } }
-
 /* FEATURES SECTION */
 #features p {
   margin: 20px 30px 50px; }
@@ -138,10 +135,8 @@ header {
 /* WORKS SECTION */
 #works h3, #works p {
   color: #fff; }
-
 #works [class*="col-"] {
   padding: 0; }
-
 #works [class*="project-"] {
   margin: 1px;
   position: relative; }
@@ -153,35 +148,27 @@ header {
     bottom: 0;
     left: 0;
     right: 0; }
-
 #works .project-1 {
   background: url(https://images.pexels.com/photos/296878/pexels-photo-296878.jpeg?h=350&dpr=2&auto=compress&cs=tinysrgb) center/cover;
   height: 350px; }
-
 #works .project-2 {
   background: url(https://images.pexels.com/photos/71983/black-and-white-interior-macbook-drawing-71983.jpeg?h=350&auto=compress&cs=tinysrgb) center/cover;
   height: 350px; }
-
 #works .project-3 {
   background: url(https://images.pexels.com/photos/257897/pexels-photo-257897.jpeg?h=350&auto=compress&cs=tinysrgb) center/cover;
   height: 350px; }
-
 #works .project-4 {
   background: url(https://images.pexels.com/photos/381949/pexels-photo-381949.jpeg?h=350&auto=compress&cs=tinysrgb) center/cover;
   height: 350px; }
-
 #works .project-5 {
   background: url(https://images.pexels.com/photos/266176/pexels-photo-266176.jpeg?h=350&auto=compress&cs=tinysrgb) center/cover;
   height: 350px; }
-
 #works .project-6 {
   background: url(https://images.pexels.com/photos/39284/macbook-apple-imac-computer-39284.jpeg?h=350&auto=compress&cs=tinysrgb) center/cover;
   height: 350px; }
-
 #works .project-7 {
   background: url(https://images.pexels.com/photos/95916/pexels-photo-95916.jpeg?h=350&auto=compress&cs=tinysrgb) center/cover;
   height: 350px; }
-
 #works .project-8 {
   background: url(https://images.pexels.com/photos/273691/pexels-photo-273691.jpeg?h=350&auto=compress&cs=tinysrgb) center/cover;
   height: 350px; }
@@ -199,7 +186,6 @@ header {
     justify-content: center;
     -webkit-flex-direction: column;
     flex-direction: column; } }
-
 /* TEAM SECTION */
 #team .thumbnail {
   border: none;
@@ -219,7 +205,6 @@ header {
 @media (min-width: 768px) {
   #team {
     text-align: left; } }
-
 /* CLIENTS SECTION */
 #clients {
   background: #53354a; }
@@ -267,11 +252,9 @@ header {
     padding: 0 0 100px 30px; }
     #clients .carousel .carousel-caption blockquote {
       font-size: 36px; } }
-
 @media (min-width: 992px) {
   #clients .carousel {
     max-width: 600px; } }
-
 /* DOWNLOAD SECTION */
 #download .btn {
   margin-top: 30px;
@@ -298,10 +281,10 @@ header {
         color: rgba(58, 62, 100, 0.95); }
   .footer .row:nth-of-type(2) {
     background: rgba(49, 52, 84, 0.95);
-    color: #808080;
     padding: 30px 0; }
     .footer .row:nth-of-type(2) p {
-      margin: 0; }
+      margin: 0;
+      color: #808080; }
     .footer .row:nth-of-type(2) a {
       color: #fff; }
   .footer .fa-heart {
